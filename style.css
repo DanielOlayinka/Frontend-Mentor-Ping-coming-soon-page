@@ -81,10 +81,13 @@ b {
 }
 
 .email-input #email-error {
+  top:-9px;
   color: var(--Red400);
   font-size: 0.8rem;
   margin-top: 0.5rem;
   padding-left: 0.5rem;
+  position: relative;
+  transition: top 0.6s ease-in;
 }
 
 .email-confirmation button {

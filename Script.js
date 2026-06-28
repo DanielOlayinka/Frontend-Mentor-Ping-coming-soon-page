@@ -13,8 +13,12 @@ function checkEmail() {
   if (!validateEmail(email)) {
     emailError.textContent = "Please enter a valid email address";
     emailError.style.color = "red";
+    emailError.style.top = "2px";
+    emailField.style.borderColor = "red";
   } else {
     emailError.textContent = "Email is valid";
     emailError.style.color = "green";
+    emailError.style.top = "2px";
+    emailField.style.borderColor = "green";
   }
-}
+};
