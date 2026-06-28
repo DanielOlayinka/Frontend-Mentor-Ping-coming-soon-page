@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Blue500: hsl(223, 87%, 63%);
+  --Blue200: hsl(223, 100%, 88%);
+  --Red400: hsl(354, 100%, 66%);
+  --Gray400: hsl(0, 0%, 59%);
+  --Blue950: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  padding: 4%;
+  font-size: 1rem;
+  color: var(--Blue950);
+  font-family: "Libre Franklin";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 5rem;
+  margin: 1rem 0;
+}
+
+h1 {
+  color: var(--Gray400);
+  font-weight: 300;
+  margin: 1.2rem 0;
+  letter-spacing: 0.5px;
+  font-size: 2.8rem;
+}
+
+b {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--Blue950);
+}
+
+.email-confirmation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+  gap: 0.5rem;
+}
+#email-field {
+  outline: none;
+  width: 26rem;
+  padding: 1rem 1rem;
+  border-radius: 25px;
+  border: 1px solid var(--Blue200);
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+}
+.email-input input::placeholder {
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--Blue200);
+}
+
+.email-input input{
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.email-input #email-error {
+  color: var(--Red400);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.email-confirmation button {
+  width: 12rem;
+  height: 3.5rem;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--Blue500);
+  box-shadow: 0px 4px 4px var(--Blue200);
+  border-radius: 25px;
+  padding: 1rem 3rem;
+}
+
+.email-confirmation button:hover {
+  background-color: var(--Blue200);
+  box-shadow: 0px 4px 4px var(--Blue500);
+  cursor: pointer;
+}
+
+.img {
+  width: 50%;
+  margin: 2.5rem 0;
+}
+.img img {
+  width: 100%;
+}
+.socials {
+  display: flex;
+  gap: 12px;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.icon {
+  background: transparent;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--Blue500);
+  border: 1px solid var(--Blue200);
+}
+
+.icon i {
+  width: 1rem;
+}
+
+.icon:hover {
+  background-color: var(--Blue500);
+  color: #ffffff;
+  cursor: pointer;
+}
+.copyright {
+  font-size: 0.8rem;
+  color: var(--Gray400);
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray400);
+}
+
+footer a {
+  color: var(--Blue500);
+  text-decoration: none;
+}

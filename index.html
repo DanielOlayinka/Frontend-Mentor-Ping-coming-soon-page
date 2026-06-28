@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+      <h1>We are launching <b>soon!</b></h1>
+
+      <p>Subscribe and get notified</p>
+      <div class="email-confirmation">
+        <div class="email-input">
+          <input
+            type="email"
+            spellcheck="false"
+            placeholder="Your email address..."
+            name="email"
+            id="email-field"
+            required
+          />
+          <span id="email-error"></span>
+        </div>
+        <button type="submit" onclick="checkEmail()">Notify Me</button>
+      </div>
+
+      <div class="img">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="illustration-dashboard"
+        />
+      </div>
+      <div class="socials">
+        <div class="icon">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>@Copyright Ping. All rights reserved.</p>
+      </div>
+    </main>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/DanielOlayinka">Daniel Olayinka</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f0bbabef82.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
